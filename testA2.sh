@@ -3,7 +3,7 @@ bash /mapreduce-test/start.sh
 /usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/input4/
 /usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/output4/
 /usr/local/hadoop/bin/hdfs dfs -mkdir -p /lab1/input4/
-/usr/local/hadoop/bin/hdfs dfs -copyFromLocal /new.txt /lab1/input4/
+/usr/local/hadoop/bin/hdfs dfs -copyFromLocal /root/new.txt /lab1/input4/
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
 -file ../Project1/mapperA4.py -mapper ../Project1/mapperA4.py \
 -file ../Project1/ReducerA4.py -reducer ../Project1/ReducerA4.py \
