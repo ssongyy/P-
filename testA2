@@ -1,14 +1,14 @@
 #!/bin/sh
 bash /mapreduce-test/start.sh
-/usr/local/hadoop/bin/hdfs dfs -rm -r /lab/input3/
-/usr/local/hadoop/bin/hdfs dfs -rm -r /lab/output3/
-/usr/local/hadoop/bin/hdfs dfs -mkdir -p /lab1/input3/
-/usr/local/hadoop/bin/hdfs dfs -copyFromLocal /mapreduce-test/mapreduce-test-data/access.log /lab/input3/
+/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/input4/
+/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/output4/
+/usr/local/hadoop/bin/hdfs dfs -mkdir -p /lab1/input4/
+/usr/local/hadoop/bin/hdfs dfs -copyFromLocal /new.txt /lab1/input4/
 /usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar \
--file ../BigDataAsn/mapper3.py -mapper ../BigDataAsn/mapper3.py \
--file ../BigDataAsn/reducer5.py -reducer ../BigDataAsn/reducer5.py \
--input /lab/input3/* -output /lab/output3/
-/usr/local/hadoop/bin/hdfs dfs -cat /lab1/output3/part-00000
-/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/input3/
-/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/output3/
+-file ../Project1/mapperA4.py -mapper ../Project1/mapperA4.py \
+-file ../Project1/ReducerA4.py -reducer ../Project1/AeducerA4.py \
+-input /lab1/input4/* -output /lab1/output4/
+/usr/local/hadoop/bin/hdfs dfs -cat /lab1/output4/part-00000
+/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/input4/
+/usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/output4/
 bash /mapreduce-test/stop.sh
