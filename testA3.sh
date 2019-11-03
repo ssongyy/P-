@@ -1,3 +1,4 @@
+#!/bin/sh
 bash /mapreduce-test/start.sh
 /usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/input3/
 /usr/local/hadoop/bin/hdfs dfs -rm -r /lab1/output3/
