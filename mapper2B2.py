@@ -5,9 +5,9 @@
 
 
 import sys
+from collections import defaultdict
 a=0
 ply=defaultdict(list)
-from collections import defaultdict
 for line in sys.stdin:
     line=line.strip()
     line=line.split('\t')
