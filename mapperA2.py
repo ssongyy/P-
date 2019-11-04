@@ -12,5 +12,5 @@ for line in sys.stdin:
     line=line.split('\t')
     newitem=line[-2]+'--'+line[6]
     newlist.append(newitem)
-    for i in newlist:
-         print '%s\t%s' % (i,1)
+for i in newlist:
+    print '%s\t%s' % (i,1)
