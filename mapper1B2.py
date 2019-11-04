@@ -22,5 +22,5 @@ for line in sys.stdin:
             zone.append([line[-2],'Z4',line[-4]])
 for i in zone:
         if i[0] in name:
-            print '%s\t%s\n'%(i[0]+'_'+i[1],i[2])
+            print '%s\t%s'%(i[0]+'_'+i[1],i[2])
 
