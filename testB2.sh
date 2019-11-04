@@ -18,4 +18,4 @@ bash /mapreduce-test/start.sh
 -file ../Project1/Reducer2B2.py -reducer ../Project1/Reducer2B2.py \
 -input /lab2/input21/* -output /lab2/output21/
 /usr/local/hadoop/bin/hdfs dfs -cat /lab2/output21/part-00000
-# bash /mapreduce-test/stop.sh
+bash /mapreduce-test/stop.sh
