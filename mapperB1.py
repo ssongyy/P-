@@ -21,5 +21,5 @@ for i in dic:
     totalScore=sum(dic[i])
     rate=totalScore/length
     rate=round(rate,1)
-    print '%s\t%s' % (str(i)+' '+str(rate),'\n')
+    print '%s\t%s' % (str(i),str(rate))
               
