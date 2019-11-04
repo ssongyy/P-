@@ -17,6 +17,7 @@ for k,v in ply.items():
     for i in v:
         if float(i[1])>=a:
             a=float(i[1])
-            b=i[0]
-    print'%s\t%s'%(k,b)
+    for i in v:
+        if float(i[1])==a:
+            print'%s\t%s'%(k,i[0])
 
