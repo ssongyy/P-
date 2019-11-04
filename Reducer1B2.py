@@ -21,8 +21,8 @@ for k in pp.keys():
     ply[name].append([zone,pp[k]])
 for k,v in ply.items():
     for i in v:
-        if float(i[1][0])>=a:
-            a=float(i[1][0])
+        if float(i[1])>=a:
+            a=float(i[1])
             b=i[0]
     print '%s\t%s'%(k,b)
 
