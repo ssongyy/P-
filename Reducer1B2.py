@@ -11,7 +11,7 @@ names= defaultdict(list)
 pp=defaultdict(list)
 ply=defaultdict(list)
 for line in sys.stdin:
-    line=line.strip('\n')
+    line=line.strip()
     line=line.split('\t')
     names[line[0]].append(float(line[1]))
 for k,v in names.items():
