@@ -8,8 +8,8 @@ import sys
 from collections import defaultdict
 from operator import itemgetter
 names= defaultdict(list)
-pp=defaultdict(list)
-ply=defaultdict(list)
+pp={}
+# ply=defaultdict(list)
 for line in sys.stdin:
     line=line.strip()
     line=line.split('\t')
