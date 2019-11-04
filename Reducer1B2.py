@@ -24,5 +24,5 @@ for k,v in ply.items():
         if float(i[1][0])>=a:
             a=float(i[1][0])
             b=i[0]
-    print(k,b)
+    print '%s\t%s'%(k,b)
 
