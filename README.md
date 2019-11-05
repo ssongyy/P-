@@ -1,5 +1,5 @@
 The execute the entire MapReduce System for the question 1-problem1:
-1. Copy the file to cloud from local 
+1.Copy the file to cloud from local 
 2.Copy the mapper to the cloud with file:ssongyy/project1/mapperA1.Py
 3.Copy the reducer to the could with file:ssongyy/project1/reducerA1.Py
 4. Bash testA1.sh to run the system. 
