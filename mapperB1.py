@@ -17,8 +17,8 @@ for line in sys.stdin:
 for k,v in dic.items():
     length=len(v)
     totalScore=sum(v)
-    rate=1-(totalScore/length)
-    print'%s\t%s' % (k,rate)
+#     rate=1-(totalScore/length)
+    print'%s\t%s' % (k,[length,totalScore])
   
 
               
