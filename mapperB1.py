@@ -14,10 +14,10 @@ for line in sys.stdin:
     team=line[-1]+'_'+line[-6]
     score=int(line[-4])
     dic[team].append(score)
-for i in dic:
+for i in dic.keys():
     length=len(dic[i])
     totalScore=sum(dic[i])
-    rate=1-totalScore/length
+    rate=1-(totalScore/length)
     print'%s\t%s' % (str(i),str(rate))
 
               
